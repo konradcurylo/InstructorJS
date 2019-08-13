@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://multitax.spero.click:8080/accounting/documents -->
+<html lang="en" class="wf-poppins-n3-active wf-poppins-n4-active wf-poppins-n5-active wf-poppins-n6-active wf-poppins-n7-active wf-roboto-n3-active wf-roboto-n4-active wf-roboto-n5-active wf-roboto-n6-active wf-roboto-n7-active wf-active"><!-- begin::Head --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>e-księgowa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+        <!--begin::Web font -->
+        <script src="./e-księgowa_files/webfont.js.pobrane"></script>
+        <link rel="stylesheet" href="./e-księgowa_files/css" media="all"><script>
+            WebFont.load({
+            google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+          });
+        </script>
+
+        <!--end::Web font -->
+
+        <!--begin::Global Theme Styles -->
+        <link href="./e-księgowa_files/vendors.bundle.css" rel="stylesheet" type="text/css">
+
+        <!--RTL version:<link href="../../../assets/vendors/base/vendors.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+        <link href="./e-księgowa_files/style.bundle2.css" rel="stylesheet" type="text/css">
+
+        <!--RTL version:<link href="../../../assets/demo/default/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+
+        <!--end::Global Theme Styles -->
+
+        <!--begin::Page Vendors Styles -->
+        <link href="./e-księgowa_files/datatables.bundle.css" rel="stylesheet" type="text/css">
+
+        <!--RTL version:<link href="../../../assets/vendors/custom/datatables/datatables.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+
+        <!--enjoyhint css -->
+        <link href="./enjoyhint/enjoyhint.css" rel="stylesheet"/>
+
+
+        <!--end::Page Vendors Styles -->
+        <link rel="shortcut icon" href="http://multitax.spero.click:8080/multitax/favicon.ico">
+    <style type="text/css">span.im-caret {
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+span.im-static {
+    color: grey;
+}
+
+div.im-colormask {
+    display: inline-block;
+    border-style: inset;
+    border-width: 2px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div.im-colormask > input {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    -webkit-appearance: caret;
+    -moz-appearance: caret;
+    appearance: caret;
+    border-style: none;
+    left: 0; /*calculated*/
+}
+
+div.im-colormask > input:focus {
+    outline: none;
+}
+
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > input::selection{
+    background: none;
+}
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > div {
+    color: black;
+    display: inline-block;
+    width: 100px; /*calculated*/
+}</style></head>
+
+    <!-- end::Head -->
+
+    <!-- begin::Body -->
+    <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default">
+
+        <!-- begin:: Page -->
+        <div class="m-grid m-grid--hor m-grid--root m-page">
+
+            <!-- BEGIN: Header -->
+            <header id="m_header" class="m-grid__item    m-header " m-minimize-offset="200" m-minimize-mobile-offset="200">
+                <div class="m-container m-container--fluid m-container--full-height">
+                    <div class="m-stack m-stack--ver m-stack--desktop">
+
+                        <!-- BEGIN: Brand -->
+                        <div class="m-stack__item m-brand  m-brand--skin-dark ">
+                            <div class="m-stack m-stack--ver m-stack--general">
+                                <div class="m-stack__item m-stack__item--middle m-brand__logo">
+                                    <a href="http://multitax.spero.click:8080/" class="m-brand__logo-wrapper">
+                                        <img alt="" src="./e-księgowa_files/logo-wide.png">
+                                    </a>
+                                </div>
+                                <div class="m-stack__item m-stack__item--middle m-brand__tools">
+
+                                    <!-- BEGIN: Left Aside Minimize Toggle -->
+                                    <a href="javascript:;" id="m_aside_left_minimize_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-desktop-inline-block  ">
+                                        <span></span>
+                                    </a>
+
+                                    <!-- END -->
+
+                                    <!-- BEGIN: Responsive Aside Left Menu Toggler -->
+                                    <a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block">
+                                        <span></span>
+                                    </a>
+
+                                    <!-- END -->
+
+                                    <!-- BEGIN: Responsive Header Menu Toggler -->
+                                    <a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
+                                        <span></span>
+                                    </a>
+
+                                    <!-- END -->
+
+                                    <!-- BEGIN: Topbar Toggler -->
+                                    <a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
+                                        <i class="flaticon-more"></i>
+                                    </a>
+
+                                    <!-- BEGIN: Topbar Toggler -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- END: Brand -->
+                        <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
+
+                            <!-- BEGIN: Horizontal Menu -->
+                            <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-dark " id="m_aside_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+                            <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-dark m-aside-header-menu-mobile--submenu-skin-dark ">
+                                <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+                                    <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link"><i class="m-menu__link-icon flaticon-add"></i><span class="m-menu__link-text">Dodaj</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                            <ul class="m-menu__subnav">
+                                                <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/documents/new" class="m-menu__link "><i class="m-menu__link-icon flaticon-file"></i><span class="m-menu__link-text">Dodaj dokument</span></a></li>
+                                                <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/documents" class="m-menu__link "><i class="m-menu__link-icon flaticon-file"></i><span class="m-menu__link-text">Dodaj fakturę**</span></a></li>
+                                                <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/documents" class="m-menu__link "><i class="m-menu__link-icon flaticon-file"></i><span class="m-menu__link-text">Dodaj proforma**</span></a></li>
+                                                <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/recurring_documents/new" class="m-menu__link "><i class="m-menu__link-icon flaticon-file"></i><span class="m-menu__link-text">Dodaj abonament</span></a></li>
+                                                <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/documents" class="m-menu__link "><i class="m-menu__link-icon flaticon-file"></i><span class="m-menu__link-text">Dodaj kontakt**</span></a></li>
+                                                <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/documents" class="m-menu__link "><i class="m-menu__link-icon flaticon-file"></i><span class="m-menu__link-text">Dodaj produkt**</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    
+                                        <li class="m-menu__item">
+                                            <form method="post" action="http://multitax.spero.click:8080/context/accounting_office/switch">
+    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+    <div class="input-group input-group-sm">
+        <select name="accounting_office_pk" class="form-control" data-cip-id="cIPJQ342845639"> 
+            
+                <option value="1" selected="">
+                      MultiTax</option>
+                
+            
+                <option value="2">
+                      SperoBis</option>
+                
+            
+        </select>
+        <div class="input-group-append">
+            <input type="submit" value="przełącz" class="btn btn-dark">
+        </div>
+    </div>
+    <input type="hidden" name="next" value="/accounting/documents">
+</form>
+
+                                        </li>
+                                    
+
+                                    
+                                        <li class="m-menu__item">
+                                            <form action="http://multitax.spero.click:8080/context/accounting_company/switch" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+    <div class="input-group input-group-sm">
+        <select name="accounting_company_pk" class="form-control" data-cip-id="cIPJQ342845640">
+            
+                <option value="4">
+                    SPR STAL MIELEC S.A.
+                </option>
+            
+                <option value="1" selected="">
+                    SPERO jako klient biura
+                </option>
+            
+        </select>
+        <div class="input-group-append">
+            <input type="submit" value="przełącz" class="btn btn-dark">
+        </div>
+    </div>
+    <input type="hidden" name="next" value="/accounting/documents">
+</form>
+
+                                        </li>
+                                    
+
+                                    
+                                        <li class="m-menu__item">
+                                            <form action="http://multitax.spero.click:8080/context/accounting_month/switch" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+    <div class="input-group input-group-sm">
+        <select name="accounting_month_pk" class="form-control" data-cip-id="cIPJQ342845641">
+            
+                <option value="1">
+                        2019.05
+                </option>
+            
+                <option value="4">
+                        2019.06
+                </option>
+            
+                <option value="9" selected="">
+                        2019.07
+                </option>
+            
+        </select>
+        <div class="input-group-append">
+            <input type="submit" value="przełącz" class="btn btn-dark">
+        </div>
+    </div>
+    <input type="hidden" name="next" value="/accounting/documents">
+</form>
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <!-- END: Horizontal Menu -->
+
+                            <!-- BEGIN: Topbar -->
+                            <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general m-stack--fluid">
+                                <div class="m-stack__item m-topbar__nav-wrapper">
+                                    <ul class="m-topbar__nav m-nav m-nav--inline">
+                                        <li class="m-nav__item m-dropdown m-dropdown--large m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width m-dropdown--skin-light    m-list-search m-list-search--skin-light" m-dropdown-toggle="click" id="m_quicksearch" m-quicksearch-mode="dropdown" m-dropdown-persistent="1">
+                                            <a href="http://multitax.spero.click:8080/accounting/documents#" class="m-nav__link m-dropdown__toggle">
+                                                <span class="m-nav__link-icon"><i class="flaticon-search-1"></i></span>
+                                            </a>
+                                            <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                                <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
+                                                <div class="m-dropdown__inner ">
+                                                    <div class="m-dropdown__header">
+                                                        <form class="m-list-search__form">
+                                                            <div class="m-list-search__form-wrapper">
+                                                                <span class="m-list-search__form-input-wrapper">
+                                                                    <input id="m_quicksearch_input" autocomplete="off" type="text" name="q" class="m-list-search__form-input" value="" placeholder="Wyszukaj**...">
+                                                                </span>
+                                                                <span class="m-list-search__form-icon-close" id="m_quicksearch_close">
+                                                                    <i class="la la-remove"></i>
+                                                                </span>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="m-dropdown__body">
+                                                        <div class="m-dropdown__scrollable m-scrollable m-scroller ps" data-scrollable="true" data-height="300" data-mobile-height="200" style="height: 300px; overflow: hidden;">
+                                                            <div class="m-dropdown__content">
+                                                            </div>
+                                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 4px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img  m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click">
+                                            <a href="http://multitax.spero.click:8080/accounting/documents#" class="m-nav__link m-dropdown__toggle">
+                                                <span class="m-nav__link-icon"><i class="flaticon-user"></i></span>
+                                            </a>
+                                            <div class="m-dropdown__wrapper">
+                                                <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                                <div class="m-dropdown__inner">
+                                                    <div class="m-dropdown__header m--align-center" style="background: url(../../../assets/app/media/img/misc/user_profile_bg.jpg); background-size: cover;">
+                                                        <div class="m-card-user m-card-user--skin-dark">
+                                                            <div class="m-card-user__details">
+                                                                <span class="m-card-user__name m--font-weight-500">Piotr Esse</span>
+                                                                <a class="m-card-user__email m--font-weight-300 m-link">piotr.esse@sperollc.com</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-dropdown__body">
+                                                        <div class="m-dropdown__content">
+                                                            <ul class="m-nav m-nav--skin-light">
+                                                                <li class="m-nav__section m--hide">
+                                                                    <span class="m-nav__section-text">Section</span>
+                                                                </li>
+                                                                <li class="m-nav__item">
+                                                                    <a href="http://multitax.spero.click:8080/users/profile" class="m-nav__link">
+                                                                        <i class="m-nav__link-icon flaticon-profile-1"></i>
+                                                                        <span class="m-nav__link-title">
+                                                                            <span class="m-nav__link-wrap">
+                                                                                <span class="m-nav__link-text">Profil</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="m-nav__separator m-nav__separator--fit">
+                                                                </li>
+                                                                <li class="m-nav__item">
+                                                                    <a href="http://multitax.spero.click:8080/wyloguj" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">Wyloguj się</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- END: Topbar -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- END: Header -->
+
+            <!-- begin::Body -->
+            <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+
+                <!-- BEGIN: Left Aside -->
+                <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn"><i class="la la-close"></i></button>
+                <div id="m_aside_left" class="m-grid__item    m-aside-left  m-aside-left--skin-dark ">
+
+                    <!-- BEGIN: Aside Menu -->
+
+                    <div style="background-color:#801336" id="m_ver_menu" class="m-aside-menu m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark m-scroller ps" m-menu-vertical="1" m-menu-scrollable="1" m-menu-dropdown-timeout="500" style="position: relative; height: 818px; overflow: hidden;">
+                            <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow " >
+                                <li class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Pulpit</span> </span></span></a></li>
+                                
+
+
+                                <li class="m-menu__section ">
+                                    <h4 class="m-menu__section-text">Księgowość</h4>
+                                    <i class="m-menu__section-icon flaticon-more-v2"></i>
+                                </li>
+                                <li id="przychod" class="m-menu__item m-menu__item--submenu m-menu__item--active m-menu__item--open" aria-haspopup="true" m-menu-submenu-toggle="hover"><a href="javascript:;" class="m-menu__link m-menu__toggle"><i class="m-menu__link-icon flaticon-layers"></i><span class="m-menu__link-text">Przychód</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
+                                        <ul class="m-menu__subnav">
+                                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"><span class="m-menu__link"><span class="m-menu__link-text">Base</span></span></li>
+                                            <li class="m-menu__item m-menu__item--active m-menu__item--open" aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/documents" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Faktury Sprzedaż</span></a></li>
+                                            <li class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/corrections" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Korekty</span></a></li>
+                                            <li class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/documents#" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Pozostałe**</span></a></li>
+                                            <li class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/recurring_documents" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Abonamenty</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="koszty" class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a href="javascript:;" class="m-menu__link m-menu__toggle"><i class="m-menu__link-icon flaticon-layers"></i><span class="m-menu__link-text">Koszty</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
+                                        <ul class="m-menu__subnav">
+                                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"><span class="m-menu__link"><span class="m-menu__link-text">Base</span></span></li>
+                                            <li id="koszty1" class="m-menu__item" aria-haspopup="true" ><a href="http://multitax.spero.click:8080/accounting/expenses" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Faktury kosztowe</span></a></li>
+                                            <li id="koszty2" class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/purchases" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Faktury zakupu towaru</span></a></li>
+                                            <li id="koszty3" class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/depreciations" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Dokumenty wewnętrzne/amortyzacja</span></a></li>
+                                            <li id="koszty4" class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/other_documents" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Pozostałe</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/contractors" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Klienci</span></span></span></a></li>
+                                <li  class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/products" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Produkty</span></span></span></a></li>
+                                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a href="javascript:;" class="m-menu__link m-menu__toggle"><i class="m-menu__link-icon flaticon-layers"></i><span class="m-menu__link-text">Raporty</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
+                                        <ul class="m-menu__subnav">
+                                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"><span class="m-menu__link"><span class="m-menu__link-text">Base</span></span></li>
+                                            <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/reports/current" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Podsumowanie bieżące</span></a></li>
+                                            <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/reports/accounting" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Podsumowanie księgowe</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a href="javascript:;" class="m-menu__link m-menu__toggle"><i class="m-menu__link-icon flaticon-layers"></i><span class="m-menu__link-text">Księgowy</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                                    <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
+                                        <ul class="m-menu__subnav">
+                                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"><span class="m-menu__link"><span class="m-menu__link-text">Base</span></span></li>
+                                            <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/month/settlement" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Rozliczenie</span></a></li>
+                                            <li class="m-menu__item " aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/month/summary" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Zestawienie</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+
+                                <li class="m-menu__section ">
+                                    <h4 class="m-menu__section-text">Administracja</h4>
+                                    <i class="m-menu__section-icon flaticon-more-v2"></i>
+                                </li>
+                                
+                                <li class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/offices" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Biura rachunkowe</span></span></span></a></li>
+                                
+
+                                
+                                <li class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/accounting/companies" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Firmy</span></span></span></a></li>
+                                
+
+                                
+                                <li class="m-menu__item" aria-haspopup="true"><a href="http://multitax.spero.click:8080/users/" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title"> <span class="m-menu__link-wrap"> <span class="m-menu__link-text">Użytkownicy</span></span></span></a></li>
+                                
+                            </ul>
+                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 4px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                    <!-- END: Aside Menu -->
+                </div>
+
+                <!-- END: Left Aside -->
+                <div class="m-grid__item m-grid__item--fluid m-wrapper">
+
+                    <!-- BEGIN: Subheader -->
+                        
+    <div class="m-subheader ">
+        
+        <div class="d-flex ali
+        -items-center">
+            <div class="mr-aut
+            >
+                <h3 class="m-subheader__title m-subheader__title--separator"> 
+                    Faktury Sprzedaż 
+                </h3>
+                
+    <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+        <li class="m-nav__item">
+            Firmy
+        </li>
+        <li class="m-nav__separator">-</li>
+        <li class="m-nav__item">
+            <a href="http://multitax.spero.click:8080/accounting/companies/1" class="m-nav__link">
+                <span class="m-nav__link-text">SPERO jako klient biura</span>
+            </a>
+        </li>
+        <li class="m-nav__separator">-</li>
+        <li class="m-nav__item">
+            <a href="http://multitax.spero.click:8080/accounting/documents" class="m-nav__link">
+                <span class="m-nav__link-text">Dokumenty Księgowe</span>
+            </a>
+        </li>
+    </ul>
+
+            </div>
+        </div>
+    </div>
+
+                    <!-- END: Subheader -->
+
+                    <div class="m-content">
+                        
+
+                        
+    
+    
+        <div class="m-portlet m-portlet--primary m-portlet--head-solid-bg m-portlet--head-sm
+            m-portlet--collapsed" m-portlet="true">
+            <div class="m-portlet__head">
+                <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+                        <!--<span class="m-portlet__head-icon">-->
+                            <!--<i class="flaticon-graph"></i>-->
+                        <!--</span>-->
+                        <h3 class="m-portlet__head-text">
+                            Filtry
+                        </h3>
+                    </div>
+                </div>
+                <div class="m-portlet__head-tools">
+                    <ul class="m-portlet__nav">
+                        <li class="m-portlet__nav-item">
+                            <a href="http://multitax.spero.click:8080/accounting/documents" m-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon">
+                                <i class="la la-angle-down" id="filtry"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-portlet__body">
+                <form action="http://multitax.spero.click:8080/accounting/documents/search">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            
+<div class="form-group m-form__group">
+    
+        <label for="">Data wystawienia od:</label>
+    
+    <input type="text" name="issue_date__gte" id="id_issue_date__gte" class="form-control m-input">
+
+    
+</div>
+
+                            
+<div class="form-group m-form__group">
+    
+        <label for="">Wartość netto od:</label>
+    
+    <input type="number" name="netto__gte" id="id_netto__gte" class="form-control m-input" step="any">
+
+    
+</div>
+
+                            
+<div class="form-group m-form__group">
+    
+        <label  for="">Nazwa kontrahenta:</label>
+    
+    <input type="text" name="contractor_full_name__icontains" id="id_contractor_full_name__icontains" class="form-control m-input">
+
+    
+</div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            
+<div class="form-group m-form__group">
+    
+        <label for="">Data wystawienia do:</label>
+    
+    <input type="text" name="issue_date__lte" id="id_issue_date__lte" class="form-control m-input">
+
+    
+</div>
+
+                            
+<div class="form-group m-form__group">
+    
+        <label for="">Wartość netto do:</label>
+    
+    <input type="number" name="netto__lte" id="id_netto__lte" class="form-control m-input" step="any">
+
+    
+</div>
+
+                            
+<div class="form-group m-form__group">
+    
+        <label for="">Płatność:</label>
+    
+    <select name="payment_status" id="id_payment_status" class="form-control m-input">
+  <option value="" selected="">---------</option>
+
+  <option value="paid">zapłacone</option>
+
+  <option value="unpaid">niezapłacone</option>
+
+</select>
+
+    
+</div>
+
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">szukaj</button>
+                    <a href="http://multitax.spero.click:8080/accounting/documents/search">
+                        <button class="btn btn-default" type="button">wyczyść</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+    
+
+    <div class="m-portlet m-portlet--mobile">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <h3 class="m-portlet__head-text">
+                        Faktury Sprzedaż
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <form action="http://multitax.spero.click:8080/accounting/documents/export" id="export">
+                            <div class="m-dropdown m-dropdown--inline m-dropdown--arrow" m-dropdown-toggle="click" aria-expanded="true">
+                                <a href="http://multitax.spero.click:8080/accounting/documents#" class="m-dropdown__toggle btn btn-success dropdown-toggle">
+                                    Eksport
+                                </a>
+
+                                <div class="m-dropdown__wrapper" style="z-index: 101;">
+                                    <span class="m-dropdown__arrow m-dropdown__arrow--left"></span>
+
+                                    <div class="m-dropdown__inner">
+                                        <div class="m-dropdown__body">
+                                            <div class="m-dropdown__content">
+                                                <ul class="m-nav">
+                                                    <li class="m-nav__item">
+                                                        <button class="m-nav__link btn btn-link" type="submit" name="type" value="epp">
+                                                            <span class="m-nav__link-text">
+                                                                Eksport epp wybranych dokumentów
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="m-nav__item">
+                                                        <button class="m-nav__link btn btn-link" type="submit" name="type" value="xls">
+                                                            <span class="m-nav__link-text">
+                                                                Eksport xls wybranych dokumentów
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="m-nav__item">
+                                                        <button class="m-nav__link btn btn-link" type="submit" name="type" value="optima">
+                                                            <span class="m-nav__link-text">
+                                                                Eksport optima wybranych dokumentów
+                                                            </span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    
+                        <li class="m-portlet__nav-item">
+                            <a href="http://multitax.spero.click:8080/accounting/documents/new" class="btn btn-accent m-btn m-btn--custom m-btn--pill m-btn--icon m-btn--air">
+                                <span>
+                                    <i class="la la-plus"></i>
+                                    <span>Nowy Dokument</span>
+                                </span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body">
+            <table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" class="js-toggle-checkboxes">
+                        </th>
+                        <th>lp</th>
+                        <th>Numer</th>
+                        <th>Nabywca</th>
+                        <th>Wartość netto</th>
+                        <th>Wartość brutto</th>
+                        <th>Status</th>
+                        <th>Data wystawienia</th>
+                        <th>Termin zapłaty</th>
+                        <th>Zapłacone</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr>
+                            <th>
+                                 <input type="checkbox" value="55" name="document_list" form="export"> 
+                            </th>
+                            <th>
+                                1
+                            </th>
+                            <th>
+                                <a href="http://multitax.spero.click:8080/accounting/documents/55">
+                                    FV/2019/7/1
+                                    
+                                        <br>
+                                        <small>
+                                            (</small></a><small><a href="http://multitax.spero.click:8080/accounting/corrections/90">korekta</a>)
+                                        </small>
+                                    
+                                
+                            </th>
+                            <th>
+                                
+                                    <a href="http://multitax.spero.click:8080/accounting/contractors/21">
+                                        Jacek Teler
+                                    </a>
+                                
+                            </th>
+                            <th>120,00</th>
+                            <th>147,60</th>
+                            <th>
+                                <form method="post" action="http://multitax.spero.click:8080/accounting/documents/55/set_status">
+    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+    <input type="hidden" value="/accounting/documents" name="next">
+    <div class="input-group input-group-sm">
+        <select id="" name="status" class="form-control" data-cip-id="cIPJQ342845642"> 
+            
+                <option value="1">do księgowania</option>
+            
+                <option value="2" selected="">nowe/oczekujące</option>
+            
+                <option value="3">do decyzji/wyjaśnienia</option>
+            
+                <option value="4">do akceptacji</option>
+            
+                <option value="5">nie jest kosztem</option>
+            
+                <option value="6">skan/przyjęte</option>
+            
+        </select>
+        <div class="input-group-append">
+        <input type="submit" value="ok" class="btn btn-default">
+        </div>
+    </div>
+</form>
+
+                            </th>
+                            <th>4 lipca 2019</th>
+                            <th>18 lipca 2019</th>
+                            <th>
+                                0,00
+                                <a href="http://multitax.spero.click:8080/accounting/documents#" class="btn btn-primary m-btn m-btn--icon btn-sm m-btn--icon-only m-btn--pill m-btn--air" data-toggle="modal" data-target="#js-document-payment-modal-55">
+                                    <i class="fa flaticon-piggy-bank"></i>
+                                </a>
+                            </th>
+                            <td>
+                                
+                                    <a href="http://multitax.spero.click:8080/accounting/documents/55" class="btn btn-sm m-btn--pill btn-primary">zobacz</a>
+                                    <a href="http://multitax.spero.click:8080/accounting/documents/55/pdf/download" target="_blank" class="btn btn-sm m-btn--pill btn-primary">
+                                        Pobierz PDF
+                                    </a>
+
+                                    <div class="m-dropdown m-dropdown--inline  m-dropdown--arrow" m-dropdown-toggle="click">
+                                        <a href="http://multitax.spero.click:8080/accounting/documents#" class="m-dropdown__toggle btn btn-success btn-sm dropdown-toggle">
+                                            Powiadomienia
+                                        </a>
+                                        <div class="m-dropdown__wrapper">
+                                            <span class="m-dropdown__arrow m-dropdown__arrow--left"></span>
+                                            <div class="m-dropdown__inner">
+                                                <div class="m-dropdown__body">
+                                                    <div class="m-dropdown__content">
+                                                        <ul class="m-nav">
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/55/send_notification" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij fakturę</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/55/send_reminder" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij przypomnienie</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/55/send_demand" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij wezwanie</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Fakturę wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">-</span>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Przypomnienie wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">-</span>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Wezwanie wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">-</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <th>
+                                 <input type="checkbox" value="86" name="document_list" form="export"> 
+                            </th>
+                            <th>
+                                2
+                            </th>
+                            <th>
+                                <a href="http://multitax.spero.click:8080/accounting/documents/86">
+                                    FV/2019/7/2
+                                    
+                                </a>
+                            </th>
+                            <th>
+                                
+                                    <a href="http://multitax.spero.click:8080/accounting/contractors/3">
+                                        "PKP INTERCITY" SPÓŁKA AKCYJNA
+                                    </a>
+                                
+                            </th>
+                            <th>2100,00</th>
+                            <th>2100,00</th>
+                            <th>
+                                <form method="post" action="http://multitax.spero.click:8080/accounting/documents/86/set_status">
+    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+    <input type="hidden" value="/accounting/documents" name="next">
+    <div class="input-group input-group-sm">
+        <select id="" name="status" class="form-control" data-cip-id="cIPJQ342845643"> 
+            
+                <option value="1">do księgowania</option>
+            
+                <option value="2" selected="">nowe/oczekujące</option>
+            
+                <option value="3">do decyzji/wyjaśnienia</option>
+            
+                <option value="4">do akceptacji</option>
+            
+                <option value="5">nie jest kosztem</option>
+            
+                <option value="6">skan/przyjęte</option>
+            
+        </select>
+        <div class="input-group-append">
+        <input type="submit" value="ok" class="btn btn-default">
+        </div>
+    </div>
+</form>
+
+                            </th>
+                            <th>19 lipca 2019</th>
+                            <th>2 sierpnia 2019</th>
+                            <th>
+                                0,00
+                                <a href="http://multitax.spero.click:8080/accounting/documents#" class="btn btn-primary m-btn m-btn--icon btn-sm m-btn--icon-only m-btn--pill m-btn--air" data-toggle="modal" data-target="#js-document-payment-modal-86">
+                                    <i class="fa flaticon-piggy-bank"></i>
+                                </a>
+                            </th>
+                            <td>
+                                
+                                    <a href="http://multitax.spero.click:8080/accounting/documents/86" class="btn btn-sm m-btn--pill btn-primary">zobacz</a>
+                                    <a href="http://multitax.spero.click:8080/accounting/documents/86/pdf/download" target="_blank" class="btn btn-sm m-btn--pill btn-primary">
+                                        Pobierz PDF
+                                    </a>
+
+                                    <div class="m-dropdown m-dropdown--inline  m-dropdown--arrow" m-dropdown-toggle="click">
+                                        <a href="http://multitax.spero.click:8080/accounting/documents#" class="m-dropdown__toggle btn btn-success btn-sm dropdown-toggle">
+                                            Powiadomienia
+                                        </a>
+                                        <div class="m-dropdown__wrapper">
+                                            <span class="m-dropdown__arrow m-dropdown__arrow--left"></span>
+                                            <div class="m-dropdown__inner">
+                                                <div class="m-dropdown__body">
+                                                    <div class="m-dropdown__content">
+                                                        <ul class="m-nav">
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/86/send_notification" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij fakturę</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/86/send_reminder" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij przypomnienie</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/86/send_demand" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij wezwanie</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Fakturę wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">-</span>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Przypomnienie wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">-</span>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Wezwanie wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">-</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <th>
+                                 <input type="checkbox" value="87" name="document_list" form="export"> 
+                            </th>
+                            <th>
+                                3
+                            </th>
+                            <th>
+                                <a href="http://multitax.spero.click:8080/accounting/documents/87">
+                                    FV/2019/7/3
+                                    
+                                </a>
+                            </th>
+                            <th>
+                                
+                                    <a href="http://multitax.spero.click:8080/accounting/contractors/3">
+                                        "PKP INTERCITY" SPÓŁKA AKCYJNA
+                                    </a>
+                                
+                            </th>
+                            <th>16700,00</th>
+                            <th>18195,00</th>
+                            <th>
+                                <form method="post" action="http://multitax.spero.click:8080/accounting/documents/87/set_status">
+    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+    <input type="hidden" value="/accounting/documents" name="next">
+    <div class="input-group input-group-sm">
+        <select id="" name="status" class="form-control" data-cip-id="cIPJQ342845644"> 
+            
+                <option value="1">do księgowania</option>
+            
+                <option value="2" selected="">nowe/oczekujące</option>
+            
+                <option value="3">do decyzji/wyjaśnienia</option>
+            
+                <option value="4">do akceptacji</option>
+            
+                <option value="5">nie jest kosztem</option>
+            
+                <option value="6">skan/przyjęte</option>
+            
+        </select>
+        <div class="input-group-append">
+        <input type="submit" value="ok" class="btn btn-default">
+        </div>
+    </div>
+</form>
+
+                            </th>
+                            <th>20 lipca 2019</th>
+                            <th>3 sierpnia 2019</th>
+                            <th>
+                                0,00
+                                <a href="http://multitax.spero.click:8080/accounting/documents#" class="btn btn-primary m-btn m-btn--icon btn-sm m-btn--icon-only m-btn--pill m-btn--air" data-toggle="modal" data-target="#js-document-payment-modal-87">
+                                    <i class="fa flaticon-piggy-bank"></i>
+                                </a>
+                            </th>
+                            <td>
+                                
+                                    <a href="http://multitax.spero.click:8080/accounting/documents/87" class="btn btn-sm m-btn--pill btn-primary">zobacz</a>
+                                    <a href="http://multitax.spero.click:8080/accounting/documents/87/pdf/download" target="_blank" class="btn btn-sm m-btn--pill btn-primary">
+                                        Pobierz PDF
+                                    </a>
+
+                                    <div class="m-dropdown m-dropdown--inline  m-dropdown--arrow" m-dropdown-toggle="click">
+                                        <a href="http://multitax.spero.click:8080/accounting/documents#" class="m-dropdown__toggle btn btn-success btn-sm dropdown-toggle">
+                                            Powiadomienia
+                                        </a>
+                                        <div class="m-dropdown__wrapper">
+                                            <span class="m-dropdown__arrow m-dropdown__arrow--left"></span>
+                                            <div class="m-dropdown__inner">
+                                                <div class="m-dropdown__body">
+                                                    <div class="m-dropdown__content">
+                                                        <ul class="m-nav">
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/87/send_notification" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij fakturę</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/87/send_reminder" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij przypomnienie</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <form action="http://multitax.spero.click:8080/accounting/documents/87/send_demand" method="post">
+                                                                    <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+                                                                    <input type="hidden" name="next" value="/accounting/documents">
+                                                                    <button class="btn btn-link">wyślij wezwanie</button>
+                                                                </form>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Fakturę wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">20 lipca 2019 10:39</span>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Przypomnienie wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">20 lipca 2019 10:39</span>
+                                                            </li>
+                                                            <li class="m-nav__section m-nav__section--first">
+                                                                <span class="m-nav__section-text">Wezwanie wysłano: </span>
+                                                            </li>
+                                                            <li class="m-nav__item">
+                                                                <span class="m-nav__link-text">20 lipca 2019 10:39</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </td>
+                        </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr class="bg-light">
+                        <th></th>
+                        <th></th>
+                        <th>RAZEM</th>
+                        <th>18920,00</th>
+                        <th>20442,60</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    
+    
+        <div class="modal fade" id="js-document-payment-modal-55" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Płatność</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    
+<form action="http://multitax.spero.click:8080/accounting/documents/55/payment" method="post" class="m-form" novalidate="">
+    <div class="modal-body">
+        <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+        <input type="hidden" name="next" value="/accounting/documents">
+        <div class="form-group">
+            <label for="">Zapłacono</label>
+            <input name="payment_value" type="number" value="0.00" class="form-control">
+        </div>
+            
+        <div class="m-form__group form-group">
+            <div class="m-checkbox-list">
+                <label class="m-checkbox">
+                    <input type="checkbox" value="true" name="is_paid"> Zapłacono w całości
+                    <span></span>
+                </label>
+                
+                    <label class="m-checkbox">
+                        <input type="checkbox" value="true" name="send_thankyou_for_payment"> Wyślij podziękowanie za płatność emailem
+                        <span></span>
+                    </label>
+                    <label class="m-checkbox">
+                        <input type="checkbox" value="true" name="send_thankyou_for_payment_sms"> Wyślij podziękowanie za płatność sms
+                        <span></span>
+                    </label>
+                
+            </div>
+        </div>
+         
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        <button type="submit" class="btn btn-primary">Zapisz</button>
+    </div>
+</form>
+ 
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="js-document-payment-modal-86" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Płatność</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    
+<form action="http://multitax.spero.click:8080/accounting/documents/86/payment" method="post" class="m-form" novalidate="">
+    <div class="modal-body">
+        <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+        <input type="hidden" name="next" value="/accounting/documents">
+        <div class="form-group">
+            <label for="">Zapłacono</label>
+            <input name="payment_value" type="number" value="0.00" class="form-control">
+        </div>
+            
+        <div class="m-form__group form-group">
+            <div class="m-checkbox-list">
+                <label class="m-checkbox">
+                    <input type="checkbox" value="true" name="is_paid"> Zapłacono w całości
+                    <span></span>
+                </label>
+                
+                    <label class="m-checkbox">
+                        <input type="checkbox" value="true" name="send_thankyou_for_payment"> Wyślij podziękowanie za płatność emailem
+                        <span></span>
+                    </label>
+                    <label class="m-checkbox">
+                        <input type="checkbox" value="true" name="send_thankyou_for_payment_sms"> Wyślij podziękowanie za płatność sms
+                        <span></span>
+                    </label>
+                
+            </div>
+        </div>
+         
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        <button type="submit" class="btn btn-primary">Zapisz</button>
+    </div>
+</form>
+ 
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="js-document-payment-modal-87" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Płatność</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    
+<form action="http://multitax.spero.click:8080/accounting/documents/87/payment" method="post" class="m-form" novalidate="">
+    <div class="modal-body">
+        <input type="hidden" name="csrfmiddlewaretoken" value="7t2PWd3hUzSEiVKbVqgU12NEwLTaoWEtLN3g7xETFMNMduhDAhSwwy78zyJN5XAm">
+        <input type="hidden" name="next" value="/accounting/documents">
+        <div class="form-group">
+            <label for="">Zapłacono</label>
+            <input name="payment_value" type="number" value="0.00" class="form-control">
+        </div>
+            
+        <div class="m-form__group form-group">
+            <div class="m-checkbox-list">
+                <label class="m-checkbox">
+                    <input type="checkbox" value="true" name="is_paid"> Zapłacono w całości
+                    <span></span>
+                </label>
+                
+                    <label class="m-checkbox">
+                        <input type="checkbox" value="true" name="send_thankyou_for_payment"> Wyślij podziękowanie za płatność emailem
+                        <span></span>
+                    </label>
+                    <label class="m-checkbox">
+                        <input type="checkbox" value="true" name="send_thankyou_for_payment_sms"> Wyślij podziękowanie za płatność sms
+                        <span></span>
+                    </label>
+                
+            </div>
+        </div>
+         
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        <button type="submit" class="btn btn-primary">Zapisz</button>
+    </div>
+</form>
+ 
+                </div>
+            </div>
+        </div>
+    
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- end:: Body -->
+
+            <!-- begin::Footer -->
+            <footer class="m-grid__item        m-footer ">
+                <div class="m-container m-container--fluid m-container--full-height m-page__container">
+                    <div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
+                        <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
+                            <span class="m-footer__copyright">
+                                2019 © e-księgowa by <a href="https://spero.click/" class="m-link">SPERO</a>
+                            </span>
+                        </div>
+                        <div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">
+                            2019-07-25 | v0.94.3
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- end::Footer -->
+        </div>
+
+        <!-- end:: Page -->
+
+
+        <!-- begin::Scroll Top -->
+        <div id="m_scroll_top" class="m-scroll-top">
+            <i class="la la-arrow-up"></i>
+        </div>
+
+        <!-- end::Scroll Top -->
+
+
+        <!--begin::Global Theme Bundle -->
+        <script src="./e-księgowa_files/vendors.bundle.js.pobrane" type="text/javascript"></script>
+        <script src="./e-księgowa_files/scripts.bundle.js.pobrane" type="text/javascript"></script>
+
+        <!--end::Global Theme Bundle -->
+
+        <!--begin::Page Vendors -->
+        <script src="./e-księgowa_files/datatables.bundle.js.pobrane" type="text/javascript"></script>
+
+        <!--begin:enjoyhint -->
+        <script src="./enjoyhint/enjoyhint.min.js"></script>
+        <!--end::Page Vendors -->
+
+        <!--begin::Page Scripts -->
+        
+        <script>
+            const options = {
+                format: "yyyy-mm-dd",
+		orientation: "bottom left"
+            };
+            $("#id_issue_date__gte").datepicker(options);
+            $("#id_issue_date__lte").datepicker(options);
+        </script>
+        <script>
+            const toggle = $(".js-toggle-checkboxes");
+            toggle.on("click", function(){
+                toggle.parents("table").find("tbody input[type=checkbox]").prop("checked", toggle.is(":checked"))
+            });
+       </script>
+       
+       <script>
+        var enjoyhint_instance = new EnjoyHint({});
+        var enjoyhint_script_steps = [
+          {
+          'next div.m-portlet__head' : 'Tutaj, użytkowniku masz zakładkę z filtrami',
+          'nextButton': {className: "myNext", text: "Dalej"}
+          },
+          {
+          'click #filtry' : 'Kliknij aby rozwinąć i zobaczyć wszystkie opcje filtrowania',
+          'skipButton': {className: "myNext", text: "Pomiń"}
+          },
+
+          {
+          'click #id_netto__gte' : 'Data wystawienia od, kliknij',
+          'skipButton': {className: "myNext", text: "Pomiń"}
+          },
+          {
+          'click #netto__lte' : 'Data wystawienia do, kliknij',
+          'skipButton': {className: "myNext", text: "Pomiń"}
+          },
+          ];
+       
+      enjoyhint_instance.set(enjoyhint_script_steps);
+      enjoyhint_instance.run();
+      </script>
+  
+        
+
+        
+
+        <!--end::Page Scripts -->
+    
+
+    <!-- end::Body -->
+
+</body></html>
